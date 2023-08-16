@@ -4,19 +4,22 @@
 Esta documentação descreve a rota para enviar mensagens no WhatsApp através da API fornecida. A rota pode ser acessada com o seguinte formato:
 
 
-## /api/message/{{3-beecrm}}/msg
+## /api/message/{{channel}}/msg
 
 Nesta rota, você pode enviar diferentes tipos de mensagens, incluindo texto, imagem, sticker, vídeo, GIF, áudio, documento, localização e vCard. Abaixo estão os detalhes sobre como formatar os dados para cada tipo de mensagem:
 
-Enviar Mensagem de Texto:
+### Enviar Mensagem de Texto:
 
 ```json
 {
   "type": "text",
   "message": "",
   "phoneNumber": ""
-}```
-Enviar Imagem:
+}
+```
+
+
+### Enviar Imagem:
 
 ```json
 {
@@ -24,8 +27,9 @@ Enviar Imagem:
   "phoneNumber": "",
   "url_file": "URL_DA_IMAGEM",
   "caption": ""
-}```
-Enviar Sticker:
+}
+```
+### Enviar Sticker:
 
 ```json
 {
@@ -33,8 +37,9 @@ Enviar Sticker:
   "url_file": "URL_DO_STICKER",
   "caption": "",
   "phoneNumber": ""
-}```
-Enviar Vídeo:
+}
+```
+### Enviar Vídeo:
 
 ```json
 {
@@ -42,8 +47,9 @@ Enviar Vídeo:
   "url_file": "URL_DO_VÍDEO",
   "caption": "",
   "phoneNumber": ""
-}```
-Enviar GIF:
+}
+```
+### Enviar GIF:
 
 ```json
 {
@@ -51,8 +57,9 @@ Enviar GIF:
   "phoneNumber": "",
   "url_file": "URL_DO_GIF",
   "caption": ""
-}```
-Enviar Áudio:
+}
+```
+### Enviar Áudio:
 
 ```json
 {
@@ -60,8 +67,9 @@ Enviar Áudio:
   "url_file": "URL_DO_ÁUDIO",
   "caption": "",
   "phoneNumber": ""
-}```
-Enviar Documento:
+}
+```
+### Enviar Documento:
 
 ```json
 {
@@ -71,8 +79,9 @@ Enviar Documento:
   "caption": "",
   "fileName": "",
   "phoneNumber": ""
-}```
-Enviar Localização:
+}
+```
+### Enviar Localização:
 
 ```json
 {
@@ -80,8 +89,9 @@ Enviar Localização:
   "latitude": ,
   "longitude": ,
   "phoneNumber": ""
-}```
-Enviar vCard:
+}
+```
+### Enviar vCard:
 
 ```json
 {
@@ -89,7 +99,9 @@ Enviar vCard:
   "phone": "",
   "name": "",
   "phoneNumber": ""
-}```
+}
+```
+
 Certifique-se de substituir as informações relevantes nas URLs e números de telefone.
 
 Observações:
